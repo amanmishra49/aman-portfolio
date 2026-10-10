@@ -1,0 +1,170 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #081225;
+  color: #f1f5f9;
+  line-height: 1.7;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 8%;
+  border-bottom: 1px solid #1e3150;
+}
+
+.logo {
+  color: #60a5fa;
+  font-size: 23px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 22px;
+}
+
+.nav-links a {
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #60a5fa;
+}
+
+.hero {
+  min-height: 75vh;
+  padding: 110px 8% 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.tag {
+  color: #60a5fa;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-size: clamp(36px, 6vw, 64px);
+  line-height: 1.2;
+  max-width: 850px;
+}
+
+.hero h1 span {
+  color: #60a5fa;
+}
+
+.description {
+  color: #b7c4d8;
+  max-width: 570px;
+  margin: 22px 0;
+}
+
+.buttons {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.primary {
+  background: #3b82f6;
+  color: white;
+}
+
+.secondary {
+  border: 1px solid #60a5fa;
+  color: #93c5fd;
+}
+
+.section {
+  padding: 65px 8%;
+  scroll-margin-top: 20px;
+}
+
+.section h2 {
+  color: #60a5fa;
+  font-size: 30px;
+  margin-bottom: 18px;
+}
+
+.section p {
+  color: #cbd5e1;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.card,
+.project-card {
+  background: #101e35;
+  border: 1px solid #263b5c;
+  border-radius: 12px;
+  padding: 22px;
+}
+
+.project-card {
+  max-width: 550px;
+}
+
+.project-card h3 {
+  margin-bottom: 8px;
+}
+
+.project-status {
+  margin-top: 12px;
+  color: #60a5fa !important;
+}
+
+#contact .btn {
+  margin-top: 18px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  border-top: 1px solid #1e3150;
+  color: #94a3b8;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    align-items: flex-start;
+    gap: 15px;
+    flex-direction: column;
+  }
+
+  .nav-links {
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .hero {
+    padding-top: 75px;
+  }
+}
