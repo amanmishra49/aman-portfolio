@@ -140,6 +140,14 @@ body {
   margin-top: 12px;
   color: #60a5fa !important;
 }
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #3b82f6;
+  margin-bottom: 20px;
+}
 
 #contact .btn {
   margin-top: 18px;
@@ -167,4 +175,61 @@ footer {
   .hero {
     padding-top: 75px;
   }
+}
+/* Professional social buttons */
+.buttons a[href*="github.com"],
+.buttons a[href*="linkedin.com"] {
+  background: #2563eb;
+  color: #ffffff;
+  border: 1px solid #2563eb;
+  transition: 0.3s ease;
+}
+
+.buttons a[href*="github.com"]:hover,
+.buttons a[href*="linkedin.com"]:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+.buttons a[href="#contact"] {
+  background: #2563eb;
+  color: #ffffff;
+  border: 1px solid #2563eb;
+  transition: 0.3s ease;
+}
+
+.buttons a[href="#contact"]:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+.buttons a[href="#contact"],
+.buttons a[href*="github.com"],
+.buttons a[href*="linkedin.com"] {
+  background: #2563eb;
+  color: white;
+  border: 1px solid #2563eb;
+  transition: 0.3s ease;
+}
+
+.buttons a[href="#contact"]:hover,
+.buttons a[href*="github.com"]:hover,
+.buttons a[href*="linkedin.com"]:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+.project-card {
+  padding: 24px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.project-status {
+  color: #60a5fa;
+  font-weight: 600;
+}
+
+.project-card .btn {
+  align-self: flex-start;
+  margin-top: 8px;
 }
